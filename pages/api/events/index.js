@@ -7,6 +7,6 @@ export default function handler(req, res) {
   } else {
 
     res.setHeader('Allow', ['GET'])
-    res.status(405).josn({message: `Method ${req.method} is not allowed`})
+    res.status(405).json({message: `Method ${req.method} is not allowed`})
   }
 }
